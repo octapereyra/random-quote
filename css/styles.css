@@ -49,10 +49,28 @@ body {
   color: #4a5567;
 }
 
-.buttons-container button:first-child:not(:last-child) {
+.buttons-container button:first-child {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container button:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #6a6c7741;
 }
 
 @media screen and (min-width: 720px) {

@@ -1,4 +1,13 @@
 window.onload = () => {
+  getQuote()
+}
+
+document.querySelector('btn-random').addEventListener('click', () => {
+  console.log('hola')
+  getQuote()
+})
+
+function getQuote() {
   fetch('https://api.quotable.io/random')
     .then((response) => response.json())
     .then((data) => {
